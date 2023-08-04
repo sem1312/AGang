@@ -3,7 +3,7 @@ const morgan = require('morgan');
 const bodyParser = require('body-parser');
 const ejs = require('ejs');
 const path = require('path');
-const port = 2500;
+const port = 2501;
 const app = express();
 
 app.set('view engine', 'ejs');
@@ -15,9 +15,7 @@ app.use(bodyParser.json());
 app.use(morgan('dev'));
 app.use(express(path.join(__dirname, 'public')));
 
-app.get('/', (req, res) => {
-  res.render('ejs');
-});
+
 
 app.get('/inicio', (req, res) => {
   const { name, edad, apellido } = req.body;
