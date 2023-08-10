@@ -1,0 +1,12 @@
+.title{
+    display:flex;
+    justify-content: center;
+}
+
+.btns-container{
+    margin: 10px;
+}
+
+.info-container{
+    margin: 10px;
+}
